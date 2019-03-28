@@ -116,7 +116,7 @@ I knew/figured out what to do by observing the function of `copyFunction()` and 
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 ```js
-function handleClick(){
+function handleClick() {
 	alert("hello");
 }
 ```
@@ -128,7 +128,7 @@ function handleClick(){
 The HTML and Javascript code above causes a text box to appear when the user clicks on the button that says "Wow". For example, the first chunk of code (Javascript) defines the function `handleClick`. When the line ```alert("hello");``` runs inside the function, a pop-up box with the text `hello` will appear. Not only does the second chunk of code (HTML & Javascript) create the button and its text `Wow`, it also links it to the Javascript function `handleClick` with the code `onclick=handleClick()` and causes it to run. Altogether, the second chunk of code (HTML) will run first then the first chunk of code (Javascript).
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
-The code below showcases the instructions above:
+The code below follows the instructions above:
 
 ```js
 function SpringEquinox(){

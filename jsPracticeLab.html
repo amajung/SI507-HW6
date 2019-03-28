@@ -9,7 +9,8 @@
 	// It is possible you have seen this before -- if so, that's fine, if not, that's fine, too
 
 	// Output..
-	alert("hello");
+	// alert("hello");
+	alert(new Date()); //Added code so that text box containing current date and time will appear
 	console.log("hello in console");
 
 	function displayInformation () {
@@ -20,21 +21,33 @@
 		var body = document.querySelector('body')
 		body.style.background = "#CCEE00";
 		// One place to find color option codes: https://www.w3schools.com/colors/colors_picker.asp
-		body.style.margin = "10%";		
+		body.style.margin = "10%";
 	}
-	//When someone uses the keyboard shortcut to copy the words "University of Michigan" then add the words "Go Blue" to the final div.  Each occurence should be on a separate line. 
+	//When someone uses the keyboard shortcut to copy the words "University of Michigan" then add the words "Go Blue" to the final div.  Each occurence should be on a separate line.
 	//Note that this code must be outside the other function above
 	function copyFunction(){
 		document.querySelector('#cheer').innerHTML += "Go blue!<br>"
 	}
 
+	// Function produces text `O Canada` near the bottom of the page if you highlight `McGill University` and copy it
+	function copyMcGill(){
+		document.querySelector('#cheer').innerHTML += "O Canada<br>"
+	}
+
 	function handleClick(){
 		alert("hello");
 	}
+
+	function SpringEquinox(){
+		alert("March 20, 2019");
+	}
+
+	//
+
 </script>
 <style>
 p{
-	background-color: #b3b3b3;
+	background-color: #B5D3E7; //Color was changed to a shade of blue
 	border: 3px solid #FFFFFF;
 	padding: 3%;
 	font-size: 1.1em;
@@ -43,26 +56,28 @@ p{
 </style>
 </head>
 <body onload = "displayInformation();">
+
 	<h1>A name or title goes here</h1>
-
-
 	<ol>
 		<li>Apples</li>
 		<li>Bananas</li>
 		<li>Raspberries</li>
 		<li>Strawberries</li>
 	</ol>
+
 	<h2>Using JavaScript to display information on this dynamic page:</h2>
+
 	<p>
 		The URL of this page is: <span id = "URL"></span><br/>
 		The number of list items for this page: <span id = "items"></span><br/>
 		The current date/time is: <span id = "time"></span><br/>
 	</p>
+
 	<p>Some universities:</p>
 	<ul>
 		<li>Kent State</li>
 		<li>University of Pittsburgh</li>
-		<li>McGill University</li>
+		<li onCopy="copyMcGill()">McGill University</li>
 		<li>California State University Long Beach</li>
 		<li oncopy="copyFunction()">University of Michigan</li>
 	</ul>
@@ -71,6 +86,9 @@ p{
 	</div>
 
 	<button onclick=handleClick() id="wow-button">Wow</button>
+
+	<!-- Added code so a button with the text `Spring Equinox 2019` on it appears somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears -->
+	<button onclick=SpringEquinox() id="se-button">Spring Equinox 2019</button>
 
 </body>
 </html>

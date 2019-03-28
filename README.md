@@ -56,8 +56,6 @@ Below are a bunch of questions and indications of things to do. For each indicat
 	* Slightly more than half the 1000 points will come from answering the questions. The rest will come from your edits to the code.
 
 ### Names of people you have worked with on this assignment
-* List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this:
 * **Amanda Jung (amajung)**
 
 ## Questions & code instructions
